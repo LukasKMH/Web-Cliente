@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>SlideShow</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="empresa.html">Missão</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="tabela.html">Produto</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <div class="slides">
+            <input class="input" type="radio" name="slide" id="slide1" checked>
+            <input class="input" type="radio" name="slide" id="slide2">
+            <input class="input" type="radio" name="slide" id="slide3">
+
+            <div class="slide s1" id="slide1">
+                <img src="./images/torterra.png" alt="">
+            </div>
+
+            <div class="slide" id="slide2">
+                <img src="./images/empoleon.png" alt="">
+            </div>
+
+            <div class="slide" id="slide3">
+                <img src="./images/infernape.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+    </div>
+
+    <footer>
+        <p>Rodapé da página</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
+
+<!-- - Trocar radio pra button -->
