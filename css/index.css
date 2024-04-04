@@ -1,106 +1,234 @@
 body {
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(72deg, #1a397b 35%, #a0afe2, #597df1 99%);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 0 40px;
 }
 
 .menu {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%; /* Ocupa todo o espaço horizontal */
+  padding: 10px 0;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu ul li {
-    display: inline;
+  display: inline;
 }
 
 .menu ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px 20px;
+}
+
+.menu ul li a:hover {
+  background-color: #555;
+}
+
+.menu img {
+  width: 250px;
+  height: 80px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .content {
-    height: 520px;
-    width: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  height: 300px;
+  width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .content .slide img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .navigaation {
-    position: absolute;
-    bottom: 160px;
-    left: 850px;
-    display: flex;
+  position: absolute;
+  bottom: 160px;
+  left: 850px;
+  display: flex;
 }
 
 .bar {
-    width: 15px;
-    height: 15px;
-    border: 2px solid white;
-    margin: 6px;
-    border-radius: 15px;
-    cursor: pointer;
-    transform: .5s ease;
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  margin: 6px;
+  border-radius: 15px;
+  cursor: pointer;
+  transform: 0.5s ease;
 }
 
 .bar:hover {
-    background-color: white;
+  background-color: white;
 }
 
-input {
-    display: none;
+.slides input {
+  display: none;
 }
 
 .slides {
-    display: flex;
-    width: 500%;
-    height: 100%;
+  display: flex;
+  width: 500%;
+  height: 100%;
 }
 
 .slide {
-    width: 20%;
-    transition: .6s;
+  width: 20%;
+  transition: 0.6s;
 }
 
 #slide1:checked ~ .s1 {
-    margin-left: 0;
-} 
+  margin-left: 0;
+}
 
 #slide2:checked ~ .s1 {
-    margin-left: -20%;
-} 
+  margin-left: -20%;
+}
 
 #slide3:checked ~ .s1 {
-    margin-left: -40%;
+  margin-left: -40%;
+}
+
+.about * {
+  color: #222;
+  font-size: 20px;
 }
 
 /* Estilos para o rodapé */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+#contato h2 {
+  font-size: 28px;
+}
+
+#filiais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+#filiais * {
+  margin: 0;
+}
+
+#filiais ul {
+  list-style-type: none;
+}
+
+#filiais li {
+  margin-bottom: 30px;
+}
+
+#filiais span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#filiais h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+#filiais p {
+  margin-bottom: 10px;
+}
+
+form[action="#"] {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form[action="#"] input {
+  border: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 30px;
+  width: 350px;
+}
+
+form[action="#"] label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form[action="#"] textarea {
+  height: 100px;
+  border-radius: 10px;
+}
+
+form[action="#"] button {
+  height: 40px;
+  border: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.comparison-table {
+  width: 100%;
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.comparison-table th {
+  background-color: #0000cd;
+  color: white;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #808080;
+}
+
+.comparison-table tr:nth-child(odd) {
+  background-color: #d3d3d3;
 }

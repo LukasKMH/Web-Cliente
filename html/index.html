@@ -5,48 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
     <title>SlideShow</title>
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li><a href="empresa.html">Missão</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="tabela.html">Produto</a></li>
-        </ul>
-    </nav>
-    
-    <div class="content">
-        <div class="slides">
-            <input class="input" type="radio" name="slide" id="slide1" checked>
-            <input class="input" type="radio" name="slide" id="slide2">
-            <input class="input" type="radio" name="slide" id="slide3">
+    <header>
+        <nav class="menu">
+            <img src="../images/utfpr.png" alt="Logo da Minha Empresa">
+            <ul>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="empresa.html">Missão</a></li>
+                <li><a href="tabela.html">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="slides">
+                <input class="input" type="radio" name="slide" id="slide1" checked>
+                <input class="input" type="radio" name="slide" id="slide2">
+                <input class="input" type="radio" name="slide" id="slide3">
+                <input class="input" type="radio" name="slide" id="slide4">
 
-            <div class="slide s1" id="slide1">
-                <img src="./images/torterra.png" alt="">
-            </div>
+                <div class="slide" id="slide1">
+                    <img src="../images/utf1.jpg" alt="">
+                </div>
 
-            <div class="slide" id="slide2">
-                <img src="./images/empoleon.png" alt="">
-            </div>
+                <div class="slide" id="slide2">
+                    <img src="../images/utf2.jpg" alt="">
+                </div>
 
-            <div class="slide" id="slide3">
-                <img src="./images/infernape.png" alt="">
+                <div class="slide" id="slide3">
+                    <img src="../images/utf3.jpg" alt="">
+                </div>
+
+                <div class="slide" id="slide4">
+                    <img src="../images/utf4.jpg" alt="">
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="navigation">
-        <label class="bar" for="slide1"></label>
-        <label class="bar" for="slide2"></label>
-        <label class="bar" for="slide3"></label>
-    </div>
+        <div class="navigation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+        </div>
+    </main>
 
     <footer>
-        <p>Rodapé da página</p>
+        <p>&copy; 2024 Universidade Tecnológica Federal do Paraná - Todos os direitos reservados.</p>
     </footer>
-
-    <script src="./js/index.js"></script>
 </body>
 </html>
 
